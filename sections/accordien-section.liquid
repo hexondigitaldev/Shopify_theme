@@ -1,0 +1,593 @@
+<link rel="stylesheet" href="{{ 'accordien.css' | asset_url }}" media="print" onload="this.media='all'">
+
+{% style %}
+   @media(min-width:1301px){
+    .accrodien-{{section.id}} .accordien--card .acc--heading{
+      font-size:{{section.settings.heading-size}}px;
+    }
+   .accrodien-{{section.id}} .accordien--card .acc-desc{
+      font-size:{{section.settings.text-size}}px;
+    }
+   }
+   @media(max-width:1300px){
+    .accrodien-{{section.id}} .accordien--card .acc--heading{
+      font-size:{{section.settings.heading-tb-size}}px;
+    }
+   .accrodien-{{section.id}} .accordien--card .acc-desc{
+      font-size:{{section.settings.text-tb-size}}px;
+    }
+   }
+   @media(max-width:750px){
+    .accrodien-{{section.id}} .accordien--card .acc--heading{
+      font-size:{{section.settings.heading-mb-size}}px;
+    }
+   .accrodien-{{section.id}} .accordien--card .acc-desc{
+      font-size:{{section.settings.text-mb-size}}px;
+    }
+   }
+{% endstyle %}
+
+
+<section class="accordien__section accrodien-{{section.id}}">
+  <div class="page-width accordien__section-main">
+      {%- for block in section.blocks -%}
+      {%- case block.type -%}
+      {%- when 'cards' -%}
+        {% if block.settings.card-heading != blank %}
+      <div class="accordien--card cards--section card-{{block.id}}">
+        <div class="acc-card-main">
+            <div class="acc--heading {{ section.settings.accordien-size}}">
+              {{block.settings.card-heading | replace: 'p>', 'span>' }}
+            </div>
+            <div class="acc-card-content">
+            {% if block.settings.card-text != blank %}
+                <div class="acc-desc">
+                  {{block.settings.card-text | replace: 'p>', 'span>' }}
+                </div>
+             {% endif %}
+            {% style %}
+              .card-{{block.id}} .acc-card-detail{
+                font-size:{{block.settings.card--text-size}}px;
+              }
+            {% endstyle %}
+              <div class="acc-card-row">
+               <div class="acc--card">
+                 <div class="acc-card-cont">
+                   <div class="acc-card-number">{{block.settings.card-number}}</div>
+                   <div class="acc-card-detail"> {{block.settings.card-detail | replace: 'p>', 'span>'}}</div>
+                 </div>
+               </div>
+              <div class="acc--card">
+                <div class="acc-card-cont">
+                  <div class="acc-card-number">{{block.settings.card-number2}}</div>
+                  <div class="acc-card-detail"> {{block.settings.card-detail2 | replace: 'p>', 'span>'}}</div>
+                </div>
+              </div>
+              <div class="acc--card">
+                <div class="acc-card-cont">
+                  <div class="acc-card-number">{{block.settings.card-number3}}</div>
+                  <div class="acc-card-detail"> {{block.settings.card-detail3 | replace: 'p>', 'span>'}}</div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+          {% endif %}
+         {%- when 'video' -%}
+    {% if block.settings.v-heading != blank %}
+  <div class="accordien--card acc-table-video">
+        <div class="acc-card-main">
+            <div class="acc--heading {{ section.settings.accordien-size}}">
+              {{block.settings.v-heading | replace: 'p>', 'span>'}}
+            </div>
+            <div class="acc-card-content">
+             {% if block.settings.v-text != blank%}
+                <div class="acc-desc">
+                {{block.settings.v-text | replace: 'p>', 'span>'}}
+                </div>
+             {% endif %}
+              <div class="acc-card-row">
+               <div class="acc--video">
+                 <div class="acc-card-cont">
+                   <div class="acc-card-video"> 
+                     {% if block.settings.video_url_desktop != blank %}
+                         <video loading="lazy" class=" " muted autoplay loop playsinline src="{{block.settings.video_url_desktop}}" ></video>
+                     {% else %}
+                        {%- if block.settings.video_url.type == 'youtube' -%}
+                        <iframe src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ block.settings.description | escape }}"></iframe>
+                        {%- else -%}
+                        <iframe src="https://player.vimeo.com/video/{{ block.settings.video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ block.settings.description | escape }}"></iframe>
+                        {%- endif -%}
+                      {% endif %}
+                   </div>
+                 </div>
+               </div>
+                 <div class="acc--table">
+                 <div class="acc-card-table">
+                {% if block.settings.custom-html != blank %}
+                  {{ block.settings.custom-html }}
+                {% else %}
+                   <div class="acc-card-table">
+                    <div class="table-row-1 table-border">
+                      <div class="table-column">a</div>
+                      <div class="table-column">a</div>
+                      <div class="table-column">a</div>
+                      <div class="table-column">a</div>
+                    </div>
+                      <div class="table-row-2 table-border">
+                      <div class="table-column">a</div>
+                      <div class="table-column">a</div>
+                      <div class="table-column">a</div>
+                      <div class="table-column">a</div>
+                           <div class="table-column">a</div>
+                    </div>
+                      <div class="table-row-3 table-border">
+                      <div class="table-column">a</div>
+                      <div class="table-column">a</div>
+                      <div class="table-column">a</div>
+                      <div class="table-column">a</div>
+                      <div class="table-column">a</div>
+                    </div>
+                   </div>
+                {% endif %}
+                 </div>
+               </div>
+            </div>
+            </div>
+        </div>
+      </div>
+      {% endif %}
+    {% when "mvideos" %}
+        {% style %}
+          @media(min-width:1301px){
+            .mv-{{block.id}} .acc-video-heading{
+              font-size:{{block.settings.m-h-font-size}}px;
+              text-align:{{block.settings.m-h-alignment}};
+            }
+          }
+           @media(max-width:1300px){
+            .mv-{{block.id}} .acc-video-heading{
+              font-size:{{block.settings.m-ht-font-size}}px;
+              text-align:left;
+            }
+          }
+          @media(max-width:1300px){
+            .mv-{{block.id}} .acc-video-heading{
+              font-size:{{block.settings.m-hb-font-size}}px;
+            }
+          }
+        {% endstyle %}
+        {% if block.settings.m-heading != blank %}
+          <div class="accordien--card multiple--videos mv-{{block.id}}">
+        <div class="acc-card-main">
+            <div class="acc--heading {{ section.settings.accordien-size}}">
+              {{block.settings.m-heading | replace: 'p>', 'span>'}}
+            </div>
+            <div class="acc-card-content">
+              {% if block.settings.m-text != blank %}
+                <div class="acc-desc">
+                    {{block.settings.m-text | replace: 'p>', 'span>'}}
+                </div>
+              {% endif %}
+              <div class="acc-card-row row-wrap">
+               <div class="acc--video">
+                 <div class="acc-card-cont">
+                   <div class="acc-card-video"> 
+                     {% if block.settings.m_url_desktop != blank %}
+                         <video loading="lazy" class=" " muted autoplay loop playsinline src="{{block.settings.m_url_desktop}}" ></video>
+                     {% else %}
+                        {%- if block.settings.m-video_url.type == 'youtube' -%}
+                        <iframe src="https://www.youtube.com/embed/{{ block.settings.m-video_url.id }}?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ block.settings.description | escape }}"></iframe>
+                        {%- else -%}
+                        <iframe src="https://player.vimeo.com/video/{{ block.settings.m-video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ block.settings.description | escape }}"></iframe>
+                        {%- endif -%}
+                      {% endif %}
+                   </div>
+                   <div class="acc-video-heading">{{ block.settings.m-video-text | replace: 'p>', 'span>'}}</div>
+                 </div>
+               </div>
+                   <div class="acc--video">
+                 <div class="acc-card-cont">
+                   <div class="acc-card-video"> 
+                     {% if block.settings.m2_url_desktop != blank %}
+                         <video loading="lazy" class=" " muted autoplay loop playsinline src="{{block.settings.m2_url_desktop}}" ></video>
+                     {% else %}
+                        {%- if block.settings.m2-video_url.type == 'youtube' -%}
+                        <iframe src="https://www.youtube.com/embed/{{ block.settings.m2-video_url.id }}?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ block.settings.description | escape }}"></iframe>
+                        {%- else -%}
+                        <iframe src="https://player.vimeo.com/video/{{ block.settings.m2-video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ block.settings.description | escape }}"></iframe>
+                        {%- endif -%}
+                      {% endif %}
+                   </div>
+                   <div class="acc-video-heading">{{ block.settings.m2-video-text | replace: 'p>', 'span>'}}</div>
+                 </div>
+               </div>
+                   <div class="acc--video">
+                 <div class="acc-card-cont">
+                   <div class="acc-card-video"> 
+                     {% if block.settings.m3_url_desktop != blank %}
+                         <video loading="lazy" class=" " muted autoplay loop playsinline src="{{block.settings.m3_url_desktop}}" ></video>
+                     {% else %}
+                        {%- if block.settings.m3-video_url.type == 'youtube' -%}
+                        <iframe src="https://www.youtube.com/embed/{{ block.settings.m3-video_url.id }}?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ block.settings.description | escape }}"></iframe>
+                        {%- else -%}
+                        <iframe src="https://player.vimeo.com/video/{{ block.settings.m3-video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ block.settings.description | escape }}"></iframe>
+                        {%- endif -%}
+                      {% endif %}
+                   </div>
+                   <div class="acc-video-heading">{{ block.settings.m3-video-text | replace: 'p>', 'span>'}}</div>
+                 </div>
+               </div>
+                   <div class="acc--video">
+                 <div class="acc-card-cont">
+                   <div class="acc-card-video"> 
+                     {% if block.settings.m4_url_desktop != blank %}
+                         <video loading="lazy" class=" " muted autoplay loop playsinline src="{{block.settings.m4_url_desktop}}" ></video>
+                     {% else %}
+                        {%- if block.settings.m4-video_url.type == 'youtube' -%}
+                        <iframe src="https://www.youtube.com/embed/{{ block.settings.m4-video_url.id }}?enablejsapi=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ block.settings.description | escape }}"></iframe>
+                        {%- else -%}
+                        <iframe src="https://player.vimeo.com/video/{{ block.settings.m4-video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ block.settings.description | escape }}"></iframe>
+                        {%- endif -%}
+                      {% endif %}
+                   </div>
+                   <div class="acc-video-heading">{{ block.settings.m4-video-text | replace: 'p>', 'span>'}}</div>
+                 </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          {% endif %}
+    {%- endcase -%}
+    {%- endfor -%}
+  </div>
+</section>
+
+
+{% schema %}
+   {
+   	"name": "accordiens",
+   	"class": "accordiens",
+   	"settings": [
+         {
+          "type": "select",
+          "id": "accordien-size",
+          "options": [
+            {
+              "value": "large",
+              "label": "Large"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "small",
+              "label": "Small"
+            }
+          ],
+          "default": "large",
+          "label": "select Accordien size"
+        },
+      {
+   			"type": "number",
+   			"id": "heading-size",
+   			"label": "Heading Font size",
+   			"default": 48
+   		},
+   		{
+   			"type": "number",
+   			"id": "text-size",
+   			"label": "Description Font Size",
+   			"default": 36
+   		},
+        {
+   			"type": "header",
+   			"content": "------Table screeen Style-------"
+   	   },
+      {
+   			"type": "number",
+   			"id": "heading-tb-size",
+   			"label": "Heading Font size",
+   			"default": 28
+   		},
+   		{
+   			"type": "number",
+   			"id": "text-tb-size",
+   			"label": "Description Font Size",
+   			"default": 26
+   	    },
+       {
+   			"type": "header",
+   			"content": "------Mobile screeen Style-------"
+   	   },
+       {
+   			"type": "number",
+   			"id": "heading-mb-size",
+   			"label": "Heading Font size",
+   			"default": 22
+   		},
+   		{
+   			"type": "number",
+   			"id": "text-mb-size",
+   			"label": "Description Font Size",
+   			"default": 18
+   		}
+   	],
+   	"blocks": [{
+   			"type": "cards",
+   			"name": "accordien-card",
+   			"settings": [{
+   					"type": "richtext",
+   					"id": "card-heading",
+   					"label": "Add Card heading"
+   				},
+   				{
+   					"type": "richtext",
+   					"id": "card-text",
+   					"label": "Add Card Text"
+   				},
+   				{
+   					"type": "header",
+   					"content": "------card one detail-------"
+   				},
+   				{
+   					"type": "text",
+   					"id": "card-number",
+   					"label": "Add Card Number"
+   				},
+   				{
+   					"type": "richtext",
+   					"id": "card-detail",
+   					"label": "Add Card Detail"
+   				},
+   				{
+   					"type": "header",
+   					"content": "------card two detail-------"
+   				},
+   				{
+   					"type": "text",
+   					"id": "card-number2",
+   					"label": "Add Card Number"
+   				},
+   				{
+   					"type": "richtext",
+   					"id": "card-detail2",
+   					"label": "Add Card Detail"
+   				},
+   				{
+   					"type": "header",
+   					"content": "------card three detail-------"
+   				},
+   				{
+   					"type": "text",
+   					"id": "card-number3",
+   					"label": "Add Card Number"
+   				},
+   				{
+   					"type": "richtext",
+   					"id": "card-detail3",
+   					"label": "Add Card Detail"
+   				},
+                {
+                  "type":"number",
+                  "id":"card--text-size",
+                  "label":"Select Card font size",
+                  "default":24
+                }
+
+   			]
+   		},
+   		{
+   			"type": "video",
+   			"name": "accordien video table",
+   			"settings": [{
+   					"type": "richtext",
+   					"id": "v-heading",
+   					"label": "Add heading"
+   				},
+   				{
+   					"type": "richtext",
+   					"id": "v-text",
+   					"label": "Add Description"
+   				},
+   				{
+   					"type": "header",
+   					"content": "---------Video detail-------"
+   				},
+   				{
+   					"type": "text",
+   					"id": "video_url_desktop",
+   					"label": "URL to mp4 file",
+   					"info": "add link of mp4 vidoe only"
+   				},
+   				{
+   					"type": "video_url",
+   					"id": "video_url",
+   					"accept": [
+   						"youtube",
+   						"vimeo"
+   					],
+   					"default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+   					"label": "t:sections.video.settings.video_url.label",
+   					"placeholder": "t:sections.video.settings.video_url.placeholder",
+   					"info": "t:sections.video.settings.video_url.info"
+   				},
+                {
+                  "type":"html",
+                  "id":"custom-html",
+                  "label":"Add html code"
+                }
+   			]
+   		},
+   		{
+   			"type": "mvideos",
+   			"name": "Add Multiple videos",
+   			"settings": [{
+   					"type": "richtext",
+   					"id": "m-heading",
+   					"label": "Add heading"
+   				},
+   				{
+   					"type": "richtext",
+   					"id": "m-text",
+   					"label": "Add Description"
+   				},
+   				{
+   					"type": "text",
+   					"id": "m_url_desktop",
+   					"label": "URL to mp4 file",
+   					"info": "add link of mp4 vidoe only"
+   				},
+   				{
+   					"type": "video_url",
+   					"id": "m-video_url",
+   					"accept": [
+   						"youtube",
+   						"vimeo"
+   					],
+   					"default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+   					"label": "t:sections.video.settings.video_url.label",
+   					"placeholder": "t:sections.video.settings.video_url.placeholder",
+   					"info": "t:sections.video.settings.video_url.info"
+   				},
+   				{
+   					"type": "richtext",
+   					"id": "m-video-text",
+   					"label": "Add Video Text"
+   				},
+   				{
+   					"type": "text",
+   					"id": "m2_url_desktop",
+   					"label": "URL to mp4 file",
+   					"info": "add link of mp4 vidoe only"
+   				},
+   				{
+   					"type": "video_url",
+   					"id": "m2-video_url",
+   					"accept": [
+   						"youtube",
+   						"vimeo"
+   					],
+   					"default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+   					"label": "t:sections.video.settings.video_url.label",
+   					"placeholder": "t:sections.video.settings.video_url.placeholder",
+   					"info": "t:sections.video.settings.video_url.info"
+   				},
+   				{
+   					"type": "richtext",
+   					"id": "m2-video-text",
+   					"label": "Add Video Text"
+   				},
+   				{
+   					"type": "text",
+   					"id": "m3_url_desktop",
+   					"label": "URL to mp4 file",
+   					"info": "add link of mp4 vidoe only"
+   				},
+   				{
+   					"type": "video_url",
+   					"id": "m3-video_url",
+   					"accept": [
+   						"youtube",
+   						"vimeo"
+   					],
+   					"default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+   					"label": "t:sections.video.settings.video_url.label",
+   					"placeholder": "t:sections.video.settings.video_url.placeholder",
+   					"info": "t:sections.video.settings.video_url.info"
+   				},
+   				{
+   					"type": "richtext",
+   					"id": "m3-video-text",
+   					"label": "Add Video Text"
+   				},
+   				{
+   					"type": "text",
+   					"id": "m4_url_desktop",
+   					"label": "URL to mp4 file",
+   					"info": "add link of mp4 vidoe only"
+   				},
+   				{
+   					"type": "video_url",
+   					"id": "m4-video_url",
+   					"accept": [
+   						"youtube",
+   						"vimeo"
+   					],
+   					"default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+   					"label": "t:sections.video.settings.video_url.label",
+   					"placeholder": "t:sections.video.settings.video_url.placeholder",
+   					"info": "t:sections.video.settings.video_url.info"
+   				},
+   				{
+   					"type": "richtext",
+   					"id": "m4-video-text",
+   					"label": "Add Video Text"
+   				},
+   				{
+   					"type": "header",
+   					"content": "------Style of video text"
+   				},
+   				{
+   					"type": "number",
+   					"id": "m-h-font-size",
+   					"label": "Heading font size",
+   					"default": 22
+   				},
+                {
+   					"type": "number",
+   					"id": "m-ht-font-size",
+   					"label": "Heading font size",
+                    "info":"For Tablet screen",
+   					"default": 18
+   				},
+                {
+   					"type": "number",
+   					"id": "m-hb-font-size",
+   					"label": "Heading font size",
+                    "info":"For mobile screen",
+   					"default": 16
+   				},
+   				{
+   					"type": "select",
+   					"id": "m-h-alignment",
+   					"options": [{
+   							"value": "left",
+   							"label": "Left"
+   						},
+   						{
+   							"value": "center",
+   							"label": "Center"
+   						},
+   						{
+   							"value": "right",
+   							"label": "Right"
+   						}
+   					],
+   					"default": "center",
+   					"label": "Adjust Text"
+   				}
+
+
+
+   			]
+   		}
+   	],
+
+   	"presets": [{
+   		"name": "accordiens",
+   		"blocks": [{
+   			"type": "cards"
+   		}]
+   	}]
+   }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

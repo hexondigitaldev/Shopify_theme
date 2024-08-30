@@ -1,0 +1,647 @@
+{
+  "sections": {
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "c40b756c-828e-4b15-b436-538b066f64d2": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>ON-THE-GO ENERGY<\/strong><\/p>",
+            "heading_size": "h1",
+            "heading_color": "",
+            "heading_csize": 64,
+            "h_slider": true,
+            "h_fadeout": false,
+            "heading_tb_csize": 50,
+            "heading_mb_csize": 48
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>more portable than coffee,<\/strong><\/p><p><strong>faster-acting than  drink,<\/strong><\/p><p><strong>more fun than soda,<\/strong><\/p><p><strong>cheaper than energy shots,<\/strong><\/p><p><strong>healthier than cofee,<\/strong><\/p><p><strong>more sharable than work,<\/strong><\/p><p><strong>make your mouth fresh,<\/strong><\/p>",
+            "heading_size": "h0",
+            "heading_color": "",
+            "heading_csize": 48,
+            "h_slider": false,
+            "h_fadeout": true,
+            "heading_tb_csize": 40,
+            "heading_mb_csize": 20
+          }
+        },
+        "text": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text_csize": 0,
+            "text_tb_csize": 0,
+            "text_mb_csize": 0
+          }
+        }
+      },
+      "block_order": [
+        "c40b756c-828e-4b15-b436-538b066f64d2",
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 48,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "settings": {
+        "video_url_desktop": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/4047dcbce2744f7bbd8ca52860ebd5e2.mp4",
+        "video_url": "",
+        "image": "shopify:\/\/shop_images\/image_15.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "image_contain": true,
+        "adapt_height_first_image": false,
+        "desktop_content_position": "top-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "padding_top": 92,
+        "padding_bottom": 0
+      }
+    },
+    "0eae5f15-af45-4a5d-92c0-1ddadf3584aa": {
+      "type": "featured-product",
+      "disabled": true,
+      "blocks": {
+        "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-0": {
+          "type": "text",
+          "settings": {
+            "text": "Pzaz is a breath spray for on-the-go energy. Wake up fast with every blast of natural caffeine and vitamins.",
+            "text_style": "uppercase",
+            "desc-font-size": 32,
+            "desc-tb-font-size": 22,
+            "desc-mb-font-size": 20
+          }
+        },
+        "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-1": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-2": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-3": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "option__size": "large",
+            "box-variant": "none",
+            "v-title-fsize": 28,
+            "v-price-fsize": 42,
+            "v-title-tb-fsize": 16,
+            "v-price-tb-fsize": 21,
+            "v-title-mb-fsize": 16,
+            "v-price-mb-fsize": 21
+          }
+        },
+        "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-4": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-6": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-0",
+        "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-1",
+        "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-2",
+        "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-3",
+        "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-4",
+        "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-5",
+        "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-6"
+      ],
+      "settings": {
+        "product": "cell",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_position": "left",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 80,
+        "padding_bottom": 36
+      }
+    },
+    "d33982ee-d82c-4e09-99be-e9a5240a0450": {
+      "type": "featured-product",
+      "blocks": {
+        "template--16806651003170__d33982ee-d82c-4e09-99be-e9a5240a0450-1669644384cba276a0-0": {
+          "type": "text",
+          "settings": {
+            "text": "Pzaz is a breath spray for on-the-go energy. Wake up fast with every blast of natural caffeine and vitamins.",
+            "text_style": "uppercase",
+            "desc-font-size": 32,
+            "desc-tb-font-size": 22,
+            "desc-mb-font-size": 20
+          }
+        },
+        "template--16806651003170__d33982ee-d82c-4e09-99be-e9a5240a0450-1669644384cba276a0-1": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--16806651003170__d33982ee-d82c-4e09-99be-e9a5240a0450-1669644384cba276a0-2": {
+          "type": "price",
+          "settings": {
+            "price-size": 36,
+            "price-size-tb": 21,
+            "price-size-mb": 21
+          }
+        },
+        "template--16806651003170__d33982ee-d82c-4e09-99be-e9a5240a0450-1669644384cba276a0-3": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "option__size": "large",
+            "box-variant": "3",
+            "v-title-fsize": 28,
+            "v-price-fsize": 25,
+            "v-title-tb-fsize": 16,
+            "v-price-tb-fsize": 21,
+            "v-title-mb-fsize": 16,
+            "v-price-mb-fsize": 16
+          }
+        },
+        "template--16806651003170__d33982ee-d82c-4e09-99be-e9a5240a0450-1669644384cba276a0-4": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "template--16806651003170__d33982ee-d82c-4e09-99be-e9a5240a0450-1669644384cba276a0-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--16806651003170__d33982ee-d82c-4e09-99be-e9a5240a0450-1669644384cba276a0-6": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--16806651003170__d33982ee-d82c-4e09-99be-e9a5240a0450-1669644384cba276a0-0",
+        "template--16806651003170__d33982ee-d82c-4e09-99be-e9a5240a0450-1669644384cba276a0-1",
+        "template--16806651003170__d33982ee-d82c-4e09-99be-e9a5240a0450-1669644384cba276a0-2",
+        "template--16806651003170__d33982ee-d82c-4e09-99be-e9a5240a0450-1669644384cba276a0-3",
+        "template--16806651003170__d33982ee-d82c-4e09-99be-e9a5240a0450-1669644384cba276a0-4",
+        "template--16806651003170__d33982ee-d82c-4e09-99be-e9a5240a0450-1669644384cba276a0-5",
+        "template--16806651003170__d33982ee-d82c-4e09-99be-e9a5240a0450-1669644384cba276a0-6"
+      ],
+      "settings": {
+        "product": "cell-3",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_position": "left",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "<p><\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "collage": {
+      "type": "collage",
+      "disabled": true,
+      "blocks": {
+        "collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-0",
+        "product",
+        "collection-1"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "disabled": true,
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "71221b01-1bb6-4b5a-aaff-1f52a7196485": {
+      "type": "accordien-section",
+      "blocks": {
+        "template--16806651003170__71221b01-1bb6-4b5a-aaff-1f52a7196485-1668084482020f5503-0": {
+          "type": "cards",
+          "settings": {
+            "card-heading": "<p><strong>How do i use cells?<\/strong><\/p>",
+            "card-text": "<p>Pzaz is a breath spray for on-the-go energy. Wake up fast with every blast of natural caffeine and vitamins.<\/p>",
+            "card-number": "1",
+            "card-detail": "<p>Pzaz is a breath spray for on-the-go energy. Wake up fast with every blast of natural caffeine and vitamins.<\/p>",
+            "card-number2": "2",
+            "card-detail2": "<p>Pzaz is a breath spray for on-the-go energy. Wake up fast with every blast of natural caffeine and vitamins.<\/p>",
+            "card-number3": "3",
+            "card-detail3": "<p>Pzaz is a breath spray for on-the-go energy. Wake up fast with every blast of natural caffeine and vitamins.<\/p>",
+            "card--text-size": 24
+          }
+        },
+        "6e7ea2a1-6792-42be-91bb-6814a22b76fa": {
+          "type": "video",
+          "settings": {
+            "v-heading": "<p>How do i use cells?<\/p>",
+            "v-text": "<p>How do i use cells?<\/p>",
+            "video_url_desktop": "",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "custom-html": ""
+          }
+        },
+        "811a7b69-50b4-4445-91a9-ad692ab273e1": {
+          "type": "cards",
+          "settings": {
+            "card-heading": "<p>How do i use cells?<\/p>",
+            "card-text": "<p>Pzaz is a breath spray for on-the-go energy. Wake up fast with every blast of natural caffeine and vitamins.<\/p>",
+            "card-number": "2",
+            "card-detail": "<p>Pzaz is a breath spray for on-the-go energy. Wake up fast with every blast of natural caffeine and vitamins.<\/p>",
+            "card-number2": "",
+            "card-detail2": "<p><\/p>",
+            "card-number3": "",
+            "card-detail3": "<p><\/p>",
+            "card--text-size": 24
+          }
+        },
+        "376d488a-c11d-4215-8666-79d6b9f859d1": {
+          "type": "cards",
+          "disabled": true,
+          "settings": {
+            "card-heading": "<p>How do i use cells?<\/p>",
+            "card-text": "<p>Pzaz is a breath spray for on-the-go energy. Wake up fast with every blast of natural caffeine and vitamins.<\/p>",
+            "card-number": "3",
+            "card-detail": "<p>Pzaz is a breath spray for on-the-go energy. Wake up fast with every blast of natural caffeine and vitamins.<\/p>",
+            "card-number2": "",
+            "card-detail2": "<p><\/p>",
+            "card-number3": "",
+            "card-detail3": "<p><\/p>",
+            "card--text-size": 24
+          }
+        },
+        "61dcdf99-026e-43fe-8228-10cdf1a5480b": {
+          "type": "mvideos",
+          "disabled": true,
+          "settings": {
+            "m-heading": "<p>Accordien Multiple Videos?<\/p>",
+            "m-text": "<p>asdfasdfsadfasdf<\/p>",
+            "m_url_desktop": "",
+            "m-video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "m-video-text": "<p>asdfsadfsadfsdfsdfsdfdf<\/p>",
+            "m2_url_desktop": "",
+            "m2-video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "m2-video-text": "<p>asdfsdfsadfsdfsdfsdafasdf<\/p>",
+            "m3_url_desktop": "",
+            "m3-video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "m3-video-text": "<p>afsadfasdfasdfasdfasdf<\/p>",
+            "m4_url_desktop": "",
+            "m4-video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "m4-video-text": "<p><strong>asdfsadfsadfsadfsdfsadfasdf<\/strong><\/p>",
+            "m-h-font-size": 22,
+            "m-ht-font-size": 18,
+            "m-hb-font-size": 16,
+            "m-h-alignment": "center"
+          }
+        },
+        "bb7ea34c-b770-4a4f-b455-2b7c52e66a2f": {
+          "type": "cards",
+          "disabled": true,
+          "settings": {
+            "card-heading": "<p>how do i use cell in how many way.<\/p>",
+            "card-text": "<p>nothing can i use here <\/p>",
+            "card-number": "",
+            "card-detail": "<p><\/p>",
+            "card-number2": "",
+            "card-detail2": "<p><\/p>",
+            "card-number3": "",
+            "card-detail3": "<p><\/p>",
+            "card--text-size": 24
+          }
+        }
+      },
+      "block_order": [
+        "template--16806651003170__71221b01-1bb6-4b5a-aaff-1f52a7196485-1668084482020f5503-0",
+        "6e7ea2a1-6792-42be-91bb-6814a22b76fa",
+        "811a7b69-50b4-4445-91a9-ad692ab273e1",
+        "376d488a-c11d-4215-8666-79d6b9f859d1",
+        "61dcdf99-026e-43fe-8228-10cdf1a5480b",
+        "bb7ea34c-b770-4a4f-b455-2b7c52e66a2f"
+      ],
+      "settings": {
+        "accordien-size": "medium",
+        "heading-size": 38,
+        "text-size": 28,
+        "heading-tb-size": 32,
+        "text-tb-size": 22,
+        "heading-mb-size": 16,
+        "text-mb-size": 14
+      }
+    },
+    "38dd54b5-132a-4751-a8ca-b2d4420e2b76": {
+      "type": "featured-product",
+      "blocks": {
+        "template--16806651003170__38dd54b5-132a-4751-a8ca-b2d4420e2b76-167040610823a6a254-0": {
+          "type": "text",
+          "settings": {
+            "text": "this is just a dummy product",
+            "text_style": "uppercase",
+            "desc-font-size": 30,
+            "desc-tb-font-size": 30
+          }
+        },
+        "template--16806651003170__38dd54b5-132a-4751-a8ca-b2d4420e2b76-167040610823a6a254-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--16806651003170__38dd54b5-132a-4751-a8ca-b2d4420e2b76-167040610823a6a254-2": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--16806651003170__38dd54b5-132a-4751-a8ca-b2d4420e2b76-167040610823a6a254-3": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "option__size": "large",
+            "box-variant": "2",
+            "v-title-tb-fsize": 20,
+            "v-price-tb-fsize": 20
+          }
+        },
+        "template--16806651003170__38dd54b5-132a-4751-a8ca-b2d4420e2b76-167040610823a6a254-4": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "template--16806651003170__38dd54b5-132a-4751-a8ca-b2d4420e2b76-167040610823a6a254-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--16806651003170__38dd54b5-132a-4751-a8ca-b2d4420e2b76-167040610823a6a254-6": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--16806651003170__38dd54b5-132a-4751-a8ca-b2d4420e2b76-167040610823a6a254-0",
+        "template--16806651003170__38dd54b5-132a-4751-a8ca-b2d4420e2b76-167040610823a6a254-1",
+        "template--16806651003170__38dd54b5-132a-4751-a8ca-b2d4420e2b76-167040610823a6a254-2",
+        "template--16806651003170__38dd54b5-132a-4751-a8ca-b2d4420e2b76-167040610823a6a254-3",
+        "template--16806651003170__38dd54b5-132a-4751-a8ca-b2d4420e2b76-167040610823a6a254-4",
+        "template--16806651003170__38dd54b5-132a-4751-a8ca-b2d4420e2b76-167040610823a6a254-5",
+        "template--16806651003170__38dd54b5-132a-4751-a8ca-b2d4420e2b76-167040610823a6a254-6"
+      ],
+      "settings": {
+        "product": "cell-4",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_position": "left",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "7aa12243-04a4-4963-ab7e-4dd17f174ac6": {
+      "type": "featured-product",
+      "blocks": {
+        "template--16806651003170__7aa12243-04a4-4963-ab7e-4dd17f174ac6-167040610823a6a254-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--16806651003170__7aa12243-04a4-4963-ab7e-4dd17f174ac6-167040610823a6a254-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--16806651003170__7aa12243-04a4-4963-ab7e-4dd17f174ac6-167040610823a6a254-2": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--16806651003170__7aa12243-04a4-4963-ab7e-4dd17f174ac6-167040610823a6a254-3": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "option__size": "large",
+            "box-variant": "none",
+            "v-title-mb-fsize": 14,
+            "v-price-mb-fsize": 18
+          }
+        },
+        "template--16806651003170__7aa12243-04a4-4963-ab7e-4dd17f174ac6-167040610823a6a254-4": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--16806651003170__7aa12243-04a4-4963-ab7e-4dd17f174ac6-167040610823a6a254-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--16806651003170__7aa12243-04a4-4963-ab7e-4dd17f174ac6-167040610823a6a254-6": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--16806651003170__7aa12243-04a4-4963-ab7e-4dd17f174ac6-167040610823a6a254-0",
+        "template--16806651003170__7aa12243-04a4-4963-ab7e-4dd17f174ac6-167040610823a6a254-1",
+        "template--16806651003170__7aa12243-04a4-4963-ab7e-4dd17f174ac6-167040610823a6a254-2",
+        "template--16806651003170__7aa12243-04a4-4963-ab7e-4dd17f174ac6-167040610823a6a254-3",
+        "template--16806651003170__7aa12243-04a4-4963-ab7e-4dd17f174ac6-167040610823a6a254-4",
+        "template--16806651003170__7aa12243-04a4-4963-ab7e-4dd17f174ac6-167040610823a6a254-5",
+        "template--16806651003170__7aa12243-04a4-4963-ab7e-4dd17f174ac6-167040610823a6a254-6"
+      ],
+      "settings": {
+        "product": "cell",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_position": "left",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "rich_text",
+    "image_banner",
+    "0eae5f15-af45-4a5d-92c0-1ddadf3584aa",
+    "d33982ee-d82c-4e09-99be-e9a5240a0450",
+    "featured_collection",
+    "collage",
+    "video",
+    "multicolumn",
+    "71221b01-1bb6-4b5a-aaff-1f52a7196485",
+    "38dd54b5-132a-4751-a8ca-b2d4420e2b76",
+    "7aa12243-04a4-4963-ab7e-4dd17f174ac6"
+  ]
+}
