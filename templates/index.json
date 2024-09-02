@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "rich_text": {
@@ -6,7 +15,7 @@
         "c40b756c-828e-4b15-b436-538b066f64d2": {
           "type": "heading",
           "settings": {
-            "heading": "<p><strong>ON-THE-GO ENERGY<\/strong><\/p>",
+            "heading": "<p><strong>ON-THE-GO ENERGY Amazing<\/strong><\/p>",
             "heading_size": "h1",
             "heading_color": "",
             "heading_csize": 64,
@@ -77,7 +86,6 @@
     },
     "0eae5f15-af45-4a5d-92c0-1ddadf3584aa": {
       "type": "featured-product",
-      "disabled": true,
       "blocks": {
         "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-0": {
           "type": "text",
@@ -145,6 +153,7 @@
         "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-5",
         "template--16806651003170__0eae5f15-af45-4a5d-92c0-1ddadf3584aa-1667836448150a16d0-6"
       ],
+      "disabled": true,
       "settings": {
         "product": "cell",
         "color_scheme": "background-1",
@@ -268,7 +277,6 @@
     },
     "collage": {
       "type": "collage",
-      "disabled": true,
       "blocks": {
         "collection-0": {
           "type": "collection",
@@ -295,6 +303,7 @@
         "product",
         "collection-1"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Multimedia collage",
         "heading_size": "h2",
@@ -322,7 +331,6 @@
     },
     "multicolumn": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "column1": {
           "type": "column",
@@ -357,6 +365,7 @@
         "column2",
         "column3"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
